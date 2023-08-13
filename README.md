@@ -21,5 +21,3 @@ Upload `chicv.typ`, `fontawesome.typ`, `resume.typ`, `AoPS_small_logo.svg` (if u
 ## Sample Output
 
 ![Sample output](CV-sample-preview.jpg)
-
-[PDF file](CV-sample.pdf)
