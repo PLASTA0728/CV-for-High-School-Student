@@ -13,7 +13,7 @@
 
 #let cventry(
   tl: lorem(2),
-  tr: "2333/23 - 2333/23",
+  tr: "",
   bl: "",
   br: "",
   content
@@ -22,6 +22,79 @@
     inset: (left: 0pt),
     strong(tl) + h(1fr) + tr +
     linebreak() +
+    if bl != "" or br != "" {
+      bl + h(1fr) + br + linebreak()
+    } +
+    content
+  )
+}
+
+#let honor(
+  tl: lorem(2),
+  tc: "Institution",
+  tr: "2333/23 - 2333/23",
+  extra: "",
+  content
+) = {
+  block(
+    inset: (left: 9pt),
+    tl + h(1fr) + tc + h(1fr)+ tr +
+    linebreak()  +
+    if extra != "" {
+      extra + linebreak()
+    }+
+    if content != "" {
+    h(9pt)+(text(9pt,blue,content))
+    }
+  )
+}
+
+#let multihonor(
+  tl: lorem(2),
+  tc: "Institution",
+  tr: "2333/23 - 2333/23",
+  content
+) = {
+  block(
+    inset: (left: 9pt),
+    tl + h(1fr) + tc +h(1fr)+ tr +
+    linebreak() +
+    content
+  )
+}
+
+#let grade(
+  tl: lorem(2),
+  tc: "",
+  tr: "",
+  content
+) = {
+  block(
+    inset: (left: 0pt),
+    strong(tl) + h(1fr) + text(style: "italic",box[GPA: #tc]) + h(1fr)+ tr +
+    if content != "" {
+    h(9pt)+(text(9pt,content))
+    }
+  )
+}
+
+
+#let cventryplus(
+  tl: lorem(2),
+  tr: "2333/23 - 2333/23",
+  ml: "",
+  mr: "",
+  bl: "",
+  br: "",
+  content
+) = {
+  block(
+    inset: (left: 0pt),
+    strong(tl) + h(1fr) + tr +
+    linebreak() +
+    if ml != "" or mr != "" {
+      ml + h(1fr) + mr + linebreak()
+    } +
     if bl != "" or br != "" {
       bl + h(1fr) + br + linebreak()
     } +
