@@ -1,102 +1,107 @@
 #import "chicv.typ": *
-
 #show: chicv
 
-= Chi Zhang
+= Your Name
 
-#fa[#envelope] skyzh\@cmu.edu |
-#fa[#github] #link("https://github.com/skyzh")[github.com/skyzh] |
-#fa[#globe] #link("https://skyzh.dev")[skyzh.dev] |
-#fa[#linkedin] #link("https://www.linkedin.com/in/alex-chi-skyzh/")[alex-chi-skyzh]
+#fa(envelope) #link("mailto:yourmail@gmail.com") |
+#fa(github) #link("https://github.com/yourgithub")[Your GitHub] | #fa(phone) +1 100-000-0000 | #fa(aops) #link("https://artofproblemsolving.com/community/user/000001")[Average AoPSer]
+
 
 == Education
 #cventry(
-  tl: "Carnegie Mellon University",
-  tr:  "2022/08 - 2023/12 (Expected)",
-  bl: "Master of Science in Computer Science, GPA 4.09/4.33",
-  br: "Pittsburgh, PA, USA"
-)[
-  - Teaching Assistant for 15-445/645 Database Systems (Fall 2022, Spring 2023)
-]
-#cventry(
-  tl: "Shangehai Jiao Tong University",
-  tr: "2018/09 - 2022/06",
-  bl: "B. Eng in Computer Science and Technology",
-  br: "Shangehai, China"
-)[
-  - GPA 93.80/100, Rank 1/149, National Scholarship 2019 (Top 0.2% national-wide)
-  - A+ Courses: Operating Systems, Computer Architecture, Computer Networks, and 28 others
-]
-== Work Experience
-#cventry(
-  tl: "RisingWave Labs",
-  tr: "2021/08 - 2022/07",
-  bl: "Database System R&D Intern",
+  tl: "Your Present School",
+  tr:  "2022/09 - 2025/6 (Expected)",
+  bl: "Diploma, Short Intro, etc.",
   br: "Shanghai, China"
 )[
-  - *Top contributor of #iconlink(
-    "https://github.com/risingwavelabs/risingwave",
-    text: "RisingWave",
-    icon: github)* _as of 2023/03_. RisingWave is a database system with PostgreSQL-compatible interface that incrementally maintains materialized views. Worked on the development of almost all components related to stream computing and state store.
-  - *Streaming Index Joins*: Designed shared state and streaming index in RisingWave; implemented index lookup join executor; implemented delta join DAG optimizer transformations; implemented distributed delta join scheduler
-  - *Performance Improvement*: Conducted intensive benchmarks and analyzed performance issues. Fixed bugs, proposed strategies, and led cross-team collaboration which improved the system throughput by 10x in a 3-month period
-  - *Developer Experience*. Initiated the RiseDev development tool to start a RisingWave cluster with one command, which is deeply integrated into the development workflow across unit testing, integration testing, and benchmarking. Built RisingWave Streaming Dashboard that shows cluster metrics and visualizes streaming query plans in one place
-  - *Mentoring*. Mentored database kernel interns and helped their integration into the team. Maintained overview documents of the database kernel to facilitate knowledge transfer and help new hires learn about the system.
+  - Grade 10 Courses:
+    - Math _(2022 Autumn)_
+    - Still math hehe _(2023 Spring)_
+  - Grade 11-12 Courses:
+    - Should it be math? _(2023 Autumn)_
+    - Maybe more ...
 ]
-
 #cventry(
-  tl: "ByteDance, Ltd.",
-  tr: "2021/06 - 2021/08",
-  bl: "Storage System R&D Intern, TerarkDB Team",
-  br: "Beijing, China"
-)[
-  - *Co-Optimized #iconlink(text: "TerarkDB", icon: github, "https://github.com/bytedance/terarkdb")* and *#iconlink(text: "ZenFS", icon: github, "https://github.com/westerndigitalcorporation/zenfs")*. Implemented Zone-aware Garbage Collection in TerarkDB and WAL-Aware Zone Allocator in ZenFS, which reduced 3-4x of space amplification and improved the p999 tail latency by 100x
-  /*
-  - Implemented *Zone-Aware Garbage Collection* in *TerrakDB* for Zoned Namespace SSDs, which reduced 3-4x of space amplification caused by interleaving write lifetime in a single ZNS zone. #iconlink("https://github.com/bytedance/terarkdb", icon: github)
-  - Added observability facilities to *ZenFS* (by Western Digital) to analyze bottlenecks and implemented a *WAL-Aware Zone Allocator*, which reduced the p999 tail latency by 100x. #iconlink("https://github.com/bzbd/zenfs", icon: github)
-  */
-]
-
-#cventry(
-  tl: "PingCAP, Inc.",
-  tr: "2020/08 - 2021/01",
-  bl: "Storage System R&D Intern",
+  tl: "Your Old School",
+  tr: "2021/09 - 2022/06",
+  bl: "Diploma, Short Intro, etc.",
   br: "Shanghai, China"
 )[
-  - Built LSM-based storage engine *#iconlink("https://github.com/tikv/agatedb", icon: github, text: "AgateDB")* from ground-up. Inspired by WiscKey and BadgerDB, AgateDB separates large vallues from LSM tree into value log, so as to reduce write amplification.
+  - Rank Top 1% in grade
+  - Courses: Math
 ]
 
-== Open-Source Contributions
+== Standardized Tests
+=== SAT 
+1600/1600
+
+=== AP
+- Calculus BC 5
+
+== Honors and Awards
+=== School
+
+#honor(
+  tl: "Outstanding Student Award",
+  tc: "Your School",
+  tr: "2023/2",
+)[Top 5% of students in school in a semester]
+
+
+=== Mathematics
+
+#multihonor(
+  tl: "Perfect Score",
+  tc: "AMC 12 2022",
+  tr: "2022/11"
+)[Honor Roll of Distinction #linebreak()
+Distinction #linebreak()
+Certification of Achievement #linebreak() 
+AIME Qualification]
+
+#honor(
+  tl: "USAMO Qualification",
+  tc: "AIME 2023",
+  tr: "2023/2"
+)[With a perfect score 15/15 in AIME and USAMO Index 300.]
+
+
+== Extracurriculum Activities
+#cventry(
+  tl: "Mathematics Club",
+  tr: "Your School",
+  bl: "Vice President",
+  br: "2023/7-2024/7"
+)[
+  - *Emphasization* #lorem(39)
+]
+
+#cventryplus(
+  tl: "Physics Club",
+  tr: "Your School",
+  ml: "President ",
+  mr: "2023/9-2024/9 (Expected)",
+  bl: "Vice President",
+  br: "2022/9-2023/9"
+)[
+  - *Emphasization* #lorem(30)
+]
+
+#grade(
+  tl: "Some Activities with GPA",
+  tc: "4.00/4.00",
+  tr: "2022/7"
+)[
+  - *Description of Courses Taken* #lorem(38)
+]
 
 #cventry(
-  tl: "cmu-db/busttub" + " " + iconlink("https://github.com/cmu-db/bustub", icon: github),
-  tr: "2022/08 - Now"
-)[
-  - Lead the development of the BusTub database system. Added SQL support/query processing layer to the system.
-  - Redesigned course projects to help students better understand the concepts and apply them to real-world scenarios. Developed leaderboard tests to challenge advanced students and enable further study.
-
+  tl: "Author of a Book"
+)[*Description of content* #lorem(20)
 ]
 
-#cventry(
-  tl: "RisingLight Community" + " " + iconlink("https://github.com/risinglightdb", icon: github),
-  tr: "2022/01 - Now",
-)[
-  - Lead the development of *RisingLight*, an OLAP database system for educational purpose.
-]
+== Skills and Interest
 
-#cventry(
-  tl: "TiKV Community" + " " + iconlink("https://github.com/tikv", icon: github),
-  tr: "2020/05 - Now"
-)[
-  - Maintains *TiKV Coprocessor*, the push-down execution framework of TiDB. Mentored community members to contribute features (e.g. new data types, plugin system) in the *LFX Mentorship*. #iconlink("https://github.com/tikv/tikv/issues/9066")  #iconlink("https://github.com/tikv/tikv/issues/9747")
-]
-
-#cventry(
-  tl: "Personal Projects",
-  tr: "5.3k followers " + iconlink(text: "skyzh", icon: github, "https://github.com/skyzh")
-)[
-  - *#iconlink(icon: github, text: "mini-lsm", "https://github.com/skyzh/mini-lsm")* (#fa[#star]1k) Build a simple LSM-Tree storage system in Rust in a week
-  - *#iconlink(icon: github, text: "type-exercise-in-rust", "https://github.com/skyzh/mini-lsm")* (#fa[#star]1k) Learn Rust generics by implementing a vectorized expression evaluation framework
-]
-
-#align(right, text(fill: gray)[Last Updated on Mar 30, 2023])
+- What are your skills?
+- What are you interested in?
+#align(right, text(fill: gray)[Last Updated on Aug 13, 2023])
