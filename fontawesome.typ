@@ -7,6 +7,15 @@
   )
 }
 
+// My AoPS icon <3
+
+#let aops = {
+  box(image(
+    "AoPS_small_logo.svg",
+    height: 10pt
+  ))
+}
+
 // Regular icons
 
 #let ad = symbol("\u{f641}")
