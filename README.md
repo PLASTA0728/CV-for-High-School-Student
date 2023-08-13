@@ -20,6 +20,6 @@ Upload `chicv.typ`, `fontawesome.typ`, `resume.typ`, `AoPS_small_logo.svg` (if u
 
 ## Sample Output
 
-![Sample output of Chi-CV template](./img/CV-sample-preview.jpg)
+![Sample output](CV-sample-preview.jpg)
 
-[PDF file](CV sample.pdf)
+[PDF file](CV-sample.pdf)
