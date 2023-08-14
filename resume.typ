@@ -51,13 +51,24 @@
 === Mathematics
 
 #multihonor(
-  tl: "Perfect Score",
-  tc: "AMC 12 2022",
-  tr: "2022/11"
-)[Honor Roll of Distinction #linebreak()
-Distinction #linebreak()
-Certification of Achievement #linebreak() 
-AIME Qualification]
+  honorline(
+    tl: "Perfect Score",
+    tc: "AMC 12 2022",
+    tr: "2022/11"
+  ) + 
+  honorline(
+    tl: "Honor Roll of Distinction"
+  ) + 
+  honorline(
+    tl: "Distinction"
+  ) + 
+  honorline(
+    tl: "Certification of Achievement"
+  ) + 
+  honorline(
+    tl: "AIME Qualification"
+  )
+)[]
 
 #honor(
   tl: "USAMO Qualification",
@@ -76,16 +87,20 @@ AIME Qualification]
   - *Emphasization* #lorem(39)
 ]
 
-#cventryplus(
-  tl: "Physics Club",
-  tr: "Your School",
-  ml: "President ",
-  mr: "2023/9-2024/9 (Expected)",
-  bl: "Vice President",
-  br: "2022/9-2023/9"
-)[
-  - *Emphasization* #lorem(30)
-]
+#multicventry(
+  positionline(
+    tl: "Club",
+    tr: "Your School"
+  ) +
+  positionline(
+    tl: "Present",
+    tr: "2023/9 - 2024/9 (Expected)"
+  ) +
+  positionline(
+    tl: "Vice President",
+    tr: "2022/9 - 2023/9"
+  )
+)[]
 
 #grade(
   tl: "Some Activities with GPA",
@@ -104,4 +119,3 @@ AIME Qualification]
 
 - What are your skills?
 - What are you interested in?
-#align(right, text(fill: gray)[Last Updated on Aug 13, 2023])
