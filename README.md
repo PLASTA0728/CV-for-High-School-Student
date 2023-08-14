@@ -7,7 +7,7 @@ Since I am a high school student, I create some new functions ~~it's so unfamili
 - A `#grade` function for education experiences with GPA.
 - An `#honor` function for single honor. `tl` for the name of honor, `tc` for the institution, `tr` for time, and `content` for an explanation of some unfamiliar awards.
 - A `#multihonor` function for multiple honors in a single contest. However, I don't really find a way to make loops in `typst`. So my solution is just to put one award in `tl` and others in `content`, and change lines using `#linebreak()`. 
-- A `#tltr` function. This functions when we need multiple lines of job description or contest awards. To use it, use the `#block` function. This works similarly as table in LaTeX.
+- A `#tltr` function. This functions when we need multiple lines of job description (with `#cventryplus`) or contest awards (with `#multihonors`). This works similarly as table in LaTeX.
 
 PS: I create an svg file of AoPS small logo `AoPS_small_logo.svg` as an icon.
 
