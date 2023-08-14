@@ -11,6 +11,8 @@
   link(uri)[#fa[#icon] #text]
 }
 
+// cventry, position line and multicventry 
+
 #let cventry(
   tl: lorem(2),
   tr: "",
@@ -28,6 +30,28 @@
     content
   )
 }
+
+#let positionline(
+  tl: lorem(2),
+  tr: "2333/23 - 2333/23"
+) = {
+  strong(tl) + h(1fr) + tr + linebreak()
+}
+
+#let multicventry(
+  experiences,
+  content
+) = {
+  block(
+    inset: (left: 0pt),
+    experiences + 
+    if content != "" {
+      content
+    }
+  )
+}
+
+// honor, honorline and multihonor 
 
 #let honor(
   tl: lorem(2),
@@ -49,19 +73,29 @@
   )
 }
 
-#let multihonor(
+#let honorline(
   tl: lorem(2),
-  tc: "Institution",
-  tr: "2333/23 - 2333/23",
-  content
+  tc: "",
+  tr: ""
+) = {
+  tl +  h(1fr) + tc + h(1fr) + tr +linebreak()  
+}
+
+
+#let multihonor(
+  honors,
+  explanation
 ) = {
   block(
     inset: (left: 9pt),
-    tl + h(1fr) + tc +h(1fr)+ tr +
-    linebreak() +
-    content
+    honors + 
+    if explanation != ""{
+      h(9pt)+(text(9pt,blue,explanation))
+    }
   )
 }
+
+// grade function for listed gpa
 
 #let grade(
   tl: lorem(2),
@@ -79,28 +113,7 @@
 }
 
 
-#let cventryplus(
-  tl: lorem(2),
-  tr: "2333/23 - 2333/23",
-  ml: "",
-  mr: "",
-  bl: "",
-  br: "",
-  content
-) = {
-  block(
-    inset: (left: 0pt),
-    strong(tl) + h(1fr) + tr +
-    linebreak() +
-    if ml != "" or mr != "" {
-      ml + h(1fr) + mr + linebreak()
-    } +
-    if bl != "" or br != "" {
-      bl + h(1fr) + br + linebreak()
-    } +
-    content
-  )
-}
+
 
 #let chicv(body) = {
   set par(justify: true)
